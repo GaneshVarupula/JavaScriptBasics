@@ -1,0 +1,15 @@
+<p>cars works!</p>
+<b>This is my custom component called cars</b>
+<div *ngIf="hide">
+<div *ngFor="let cars of cars">
+    {{cars.make}}
+    {{cars.model}}
+    {{cars.year}}
+</div>
+</div>
+
+
+<br>
+<br>
+
+<button (click)="toggle()">Toggle ME</button>
