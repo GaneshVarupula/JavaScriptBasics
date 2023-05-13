@@ -1,18 +1,16 @@
 import { Component } from '@angular/core';
-import { MyifDirective } from './my-directive/myif.directive';
 
 @Component({
   selector: 'app-root',
-  templateUrl:  './app.component.html',
+  templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
-  
-  
 })
 export class AppComponent {
-  title = 'customdirectives';
-  showTitle:boolean=true;
+  title = 'decorato';
+  parentData: string = '';
+  message: string = '';
 
-  toggleTitle(){
-    this.showTitle=!this.showTitle;
-  }
+  receiveMessage($event: any) {
+    this.message = $event;
+}
 }

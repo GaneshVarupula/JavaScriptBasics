@@ -1,3 +1,4 @@
-<h1>Appcomponent</h1>
-<h1 *MyifDirective="showTitle">Hello,world!</h1>
-  <button (click)="toggleTitle()">Toggle title</button>
+<h1>Parent Component</h1>
+<input type="text" [(ngModel)]="parentData">
+<app-child-component [childData]="parentData"(messageEvent)="receiveMesage($event)"></app-child-component>
+<p>{{message}}</p>
