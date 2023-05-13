@@ -1,0 +1,11 @@
+<p>switch works!</p>
+<b>This is switch case</b>
+
+
+<div [ngSwitch]="switch">
+    <div *ngSwitchCase="'on'">Switch is on</div>
+    <div *ngSwitchCase="'off'">Switch is off</div>
+    <div *ngSwitchDefault>Switch is not defined</div>
+  </div>
+  <button (click)="clicked()"> switch change</button>
+  
