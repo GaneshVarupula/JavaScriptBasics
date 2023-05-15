@@ -1,0 +1,25 @@
+<p>countries works!</p>
+<table border="1" cellspacing="5px" cellpadding="5px" align="center" style="font-size: 30px;">
+    <thead style="background-color: aquamarine">
+        <tr>
+           
+            <th>Capital City</th>
+            <th>Capital Region</th>
+            <th>Capital CurrenciesName</th>
+            <th>Capital CurrenciesSymbol</th>
+
+            <th>Capital Flag</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let c of data">
+
+            <td>{{c.capital}}</td>
+            <td>{{c.region}}</td>
+            <td>{{c.currencies.USD.name}}</td>
+            <td>{{c.currencies.USD.symbol}}</td>
+            <td>{{c.flag}}</td>
+
+        </tr>
+    </tbody>
+</table>
